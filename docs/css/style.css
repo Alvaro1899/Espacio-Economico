@@ -58,7 +58,9 @@
   color: #3B3B3B;
   background: white;
 }
-
+.nav>li>a {
+  background-color: #000052;
+}
 /* Cuerpo */
 .main {
   flex: 1; /* El contenido principal ocupa todo el espacio disponible */
@@ -144,7 +146,7 @@
 }
 
 /* Media Query para pantallas pequeñas */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 300px) {
   .container {
     flex-direction: column; /* El contenido se apila verticalmente en pantallas pequeñas */
   }
