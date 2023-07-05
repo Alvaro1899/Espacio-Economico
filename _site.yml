@@ -20,4 +20,3 @@ output:
     includes:
       after_body:
       - pie.html
-      - lateral.html
