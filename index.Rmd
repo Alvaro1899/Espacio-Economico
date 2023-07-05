@@ -1,0 +1,15 @@
+# ___Novedades___
+
+<body>
+  <div class="main2">
+  <div class="main-border">
+    
+### ¡Descubre el poder de los mapas: Aprende a crear y manipular datos económicos con QGIS!
+
+<a href="cmapas.html"><img src="css/IMG/SIG.png" alt="Curso de SIG"></a>
+
+### ¡Emociónate con este curso! Añadi la planeación del curso para aprender a crear mapas con QGIS, donde manipularás datos económicos y los montarás en un sistema SIG para su uso geográfico. Descubre el poder de los mapas y toma decisiones informadas. ¡Da clic en la imagen!
+
+  </div>
+  </div>
+</body>

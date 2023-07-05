@@ -1,5 +1,4 @@
 <body>
-
   <div class="main">
 ### **¡Bienvenidx a mi página web!**
 
@@ -12,6 +11,6 @@ Durante mi tiempo en la UAM Azcapotzalco, he publicado algunos trabajos interesa
 En esta página web, mi objetivo es brindarte información y recursos útiles relacionados con la economía espacial y la creación de mapas, para que los apliques en tu vida diaria o en tu propio campo profesional. Si tienes alguna pregunta, no dudes en contactarme. Estoy aquí para ayudarte y compartir mis conocimientos contigo.
 
 También quiero aprovechar esta oportunidad para agradecer a los doctores con los que trabajé y conviví, ya que aprendí mucho más allá de lo académico, y ellos son parte de la inspiración detrás de esta página.
-  </div>
 
+  </div>
 </body>

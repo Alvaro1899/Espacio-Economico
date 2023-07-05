@@ -85,7 +85,54 @@
 .main h3 {
   font-size: 18px;
 }
+.main2 {
+  flex: 1; /* El contenido principal ocupa todo el espacio disponible */
+  background: transparent;
+  font-size: 14px;
+  border-radius: 5px;
+  max-width: calc(100% - 220px); /* Ajusta el valor según el ancho de la barra lateral */
+  text-align: justify;
+  padding: 20px;
+  margin: 10px;
+  margin-bottom: 100px; /* Ajusta el valor según la altura del footer */
+  border: 1px solid transparent;
+  position: relative;
+}
+.main2 h1 {
+  font-size: 26px;
+}
 
+.main2 h3 {
+  transition: opacity 0.3s, transform 0.3s;
+  font-size: 18px;
+}
+.main2:hover h3 {
+  transform: scale(1.005);
+}
+.main2 img {
+  transition: opacity 0.3s, transform 0.3s;
+}
+.main2:hover img {
+  opacity: 0.9;
+  transform: scale(1.005);
+}
+.main2::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 1px solid #3B3B3B;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: -1;
+  border-radius: 10px;
+}
+.main2:hover::before {
+  opacity: 1;
+  transform: scale(1.005);
+}
 /* Pie de página */
 .footer {
   background-color: #292929;
@@ -149,7 +196,7 @@
 }
 
 /* Media Query para pantallas pequeñas */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   .container {
     flex-direction: column; /* El contenido se apila verticalmente en pantallas pequeñas */
   }
