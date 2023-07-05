@@ -116,3 +116,82 @@
 }
 
 /*Panel lateral */
+.sidebar {
+  width: 200px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  position: fixed;
+  border-radius: 5px;
+  top: 75px;
+  right: 5px;
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 100; /* Añade una propiedad z-index para que el panel lateral esté por encima del contenido principal */
+  margin-bottom: 150px;
+  float: right; /* Añade float para que el panel lateral no interfiera con otros elementos */
+}
+
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+}
+
+/* Media Query para pantallas pequeñas */
+@media screen and (max-width: 450px) {
+  .container {
+    flex-direction: column; /* El contenido se apila verticalmente en pantallas pequeñas */
+  }
+
+  .sidebar {
+    display: none; /* Oculta la barra lateral en pantallas pequeñas */
+  }
+
+  .main {
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+/*Barras de desplazamiento*/
+html::-webkit-scrollbar {
+  width: 1px; /* Ancho de la barra de desplazamiento */
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color del fondo de la barra de desplazamiento */
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color del "pulgarcito" de la barra de desplazamiento */
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color del "pulgarcito" al pasar el cursor por encima */
+}
+/* Personaliza la barra de desplazamiento */
+.sidebar::-webkit-scrollbar {
+  width: 1px; /* Ancho de la barra de desplazamiento */
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color del fondo de la barra de desplazamiento */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color del "pulgarcito" de la barra de desplazamiento */
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color del "pulgarcito" al pasar el cursor por encima */
+}
