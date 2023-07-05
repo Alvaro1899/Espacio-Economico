@@ -1,3 +1,8 @@
+/* Contenedor principal */
+.container {
+  display: flex;
+}
+
 /* Barra de navegación general */
 .navbar {
   background-color: #000052;
@@ -7,14 +12,16 @@
   font-size: 100%;
   font-weight: bold;
 }
+
 /* Punto al inicio */
 .navbar-default .navbar-brand:hover {
-    background: white;
+  background: white;
 }
+
 /* Letras despues de */
 .navbar-default .navbar-brand {
-    color: black;
-    background: transparent;
+  color: black;
+  background: transparent;
 }
 
 /* Punto de incio en LOGO */
@@ -26,17 +33,20 @@
 }
 
 .navbar-default .navbar-nav>.active>a {
-    color: white;
-    background: transparent;
+  color: white;
+  background: transparent;
 }
+
 .navbar-default .navbar-nav>.active>a:hover {
-    color: #3B3B3B;
-    background: white;
+  color: #3B3B3B;
+  background: white;
 }
+
 .navbar-default .navbar-nav>li>a {
-    color: white;
-    position: relative;
+  color: white;
+  position: relative;
 }
+
 .navbar-default .navbar-nav>li>a::before {
   content: "";
   position: absolute;
@@ -47,21 +57,26 @@
   background-color: white;
   transform: translateY(-50%); /* Centrar verticalmente la línea */
 }
-.navbar-default .navbar-nav>li>a:hover {/* Color de letra cuando esta el cursor */
-    color: #3B3B3B;
-    background: white;
-}
-/* Cuerpo */
 
+.navbar-default .navbar-nav>li>a:hover {
+  /* Color de letra cuando está el cursor */
+  color: #3B3B3B;
+  background: white;
+}
+
+/* Cuerpo */
 .main {
+  flex: 1; /* El contenido principal ocupa todo el espacio disponible */
   background: transparent;
   font-size: 14px;
   border-radius: 5px;
-  max-width: 800px;
+  max-width: calc(100% - 220px); /* Ajusta el valor según el ancho de la barra lateral */
   text-align: justify;
   padding: 20px;
-  margin: 10px auto;
+  margin: 10px;
+  margin-bottom: 100px; /* Ajusta el valor según la altura del footer */
 }
+
 
 .main h1 {
   font-size: 26px;
@@ -70,7 +85,8 @@
 .main h3 {
   font-size: 18px;
 }
-/* Pie de página*/
+
+/* Pie de página */
 .footer {
   background-color: #292929;
   color: white;
@@ -81,6 +97,9 @@
   position: fixed;
   bottom: 0;
   left: 0;
+  float: left; /* Añade float para que el pie de página no interfiera con otros elementos */
+  clear: both; /* Limpia el float para evitar que otros elementos floten alrededor */
+  margin-bottom: 0; /* Elimina el margen inferior para evitar que el contenido se coloque debajo del footer */
 }
 
 .footer a.link {
@@ -94,4 +113,53 @@
 
 .footer i {
   margin: 0 10px;
+}
+
+/*Panel lateral */
+.sidebar {
+  width: 200px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  position: fixed;
+  border-radius: 5px;
+  top: 75px;
+  right: 5px;
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 100; /* Añade una propiedad z-index para que el panel lateral esté por encima del contenido principal */
+  margin-bottom: 150px;
+  float: right; /* Añade float para que el panel lateral no interfiera con otros elementos */
+}
+
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+}
+
+/* Media Query para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* El contenido se apila verticalmente en pantallas pequeñas */
+  }
+
+  .sidebar {
+    display: none; /* Oculta la barra lateral en pantallas pequeñas */
+  }
+
+  .main {
+    max-width: 100%;
+    margin-right: 0;
+  }
 }
