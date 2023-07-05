@@ -17,3 +17,6 @@ navbar:
 output: 
   html_document:
     css: css/style.css
+    includes:
+      after_body:
+      - pie.html
