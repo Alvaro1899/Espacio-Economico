@@ -21,3 +21,4 @@ output:
       after_body:
       - pie.html
       - lateral.html
+      - coment.html
