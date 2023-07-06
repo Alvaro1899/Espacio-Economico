@@ -196,7 +196,7 @@
 }
 
 /* Media Query para pantallas pequeñas */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .container {
     flex-direction: column; /* El contenido se apila verticalmente en pantallas pequeñas */
   }
@@ -204,11 +204,11 @@
   .sidebar {
     display: none; /* Oculta la barra lateral en pantallas pequeñas */
   }
-
-  .main {
-    max-width: 100%;
-    margin-right: 0;
-  }
+.main,
+.main2 {
+  max-width: 100%;
+  margin-right: 0;
+}
 }
 /*Barras de desplazamiento*/
 html::-webkit-scrollbar {
