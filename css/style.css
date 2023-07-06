@@ -137,7 +137,7 @@
 .footer {
   background-color: rgba(41, 41, 41, 0.9); /* Color de fondo con opacidad ajustable */
   color: white;
-  padding: 15px;
+  padding: 4px;
   text-align: center;
   border-radius: 5px;
   width: 100%;
@@ -147,6 +147,7 @@
   float: left; /* Añade float para que el pie de página no interfiera con otros elementos */
   clear: both; /* Limpia el float para evitar que otros elementos floten alrededor */
   margin-bottom: 0; /* Elimina el margen inferior para evitar que el contenido se coloque debajo del footer */
+  height: auto;
 }
 #contacto {
   line-height: 0.5;
@@ -167,7 +168,7 @@
   margin-top: 0;
   display: inline-block;
   position: relative;
-  font-size: 16px;
+  font-size: 14px;
 }
 .footer h2::after {
   content: "";
