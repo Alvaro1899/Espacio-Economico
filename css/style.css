@@ -148,7 +148,9 @@
   clear: both; /* Limpia el float para evitar que otros elementos floten alrededor */
   margin-bottom: 0; /* Elimina el margen inferior para evitar que el contenido se coloque debajo del footer */
 }
-
+#contacto {
+  line-height: 0.5;
+}
 .footer a.link {
   color: white;
   text-decoration: none;
@@ -165,6 +167,7 @@
   margin-top: 0;
   display: inline-block;
   position: relative;
+  font-size: 16px;
 }
 .footer h2::after {
   content: "";
