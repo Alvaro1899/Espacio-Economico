@@ -1,6 +1,7 @@
 <body>
   <div class="main">
   <div class="curso">
+  <div class="searchable">
 # [Cursos: Construcción de mapas con información sociodemográfica.](https://www.youtube.com/watch?v=zTgQ_VnrP_s){target="_blank"}
 
 __Objetivo:__
@@ -54,6 +55,7 @@ __¿Qúe debo de saber antes de empezar?__
 #### [Areás de influecia con aproximación real. Google vs ORS Tools.](https://www.youtube.com/watch?v=zTgQ_VnrP_s){target="_blank"}
 
 ## [Diseño y presentación de la informaión cartográfica.](https://www.youtube.com/watch?v=zTgQ_VnrP_s){target="_blank"}
+  </div>
   </div>
   </div>
 </body>

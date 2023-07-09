@@ -1,1 +1,6 @@
-¡Opps! Página en construcción...
+### Cómo buscar puntos de interés
+
+### Cómo construir una página web desde R con css y html 
+
+### Cómo construir un libro desde R (Bookdown)
+

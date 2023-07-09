@@ -16,9 +16,9 @@ navbar:
       href: about.html
 output: 
   html_document:
-    css: css/style.css
+    css: 
+      - css/style.css
     includes:
       after_body:
       - pie.html
       - lateral.html
-      - coment.html
