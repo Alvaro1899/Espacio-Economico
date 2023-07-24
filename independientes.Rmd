@@ -1,6 +1,19 @@
-### Cómo buscar puntos de interés
+<body>
+  <div class="main">
+
+### Cómo buscar puntos de interés en R y GoogleMaps
+
+¡Explora y descubre lugares increíbles! Esta guía paso a paso te muestra dos métodos para encontrar puntos de interés (datos vectoriales) con Google Maps y R Studio. Desde museos y restaurantes hasta parques y hoteles, desbloquea un mundo de posibilidades con estas herramientas poderosas. 🗺️📍
 
 ### Cómo construir una página web desde R con css y html 
 
-### Cómo construir un libro desde R (Bookdown)
+### Cómo construir un libro desde R con Bookdown
+
+### Cómo manipular datos con Macros y ChatGpt
+
+  </div>
+</body>
+
+
+
 
