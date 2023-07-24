@@ -7,18 +7,20 @@ navbar:
       href: index.html
     - text: "Curso"
       href: cmapas.html
-    - text: "Independientes"
-      href: independientes.html
-    - text: "Indicadores"
-      href: indicadores.html
+    - text: "Datos y Mapas"
+      menu:
+        - text: "Indicadores"
+          href: indicadores.html
+        - text: "Mapas"
+          href: Mapitas.html
   right:
     - text: "Acerca de mí"
       href: about.html
 output: 
   html_document:
-    css: css/style.css
+    css: 
+      - css/style.css
     includes:
       after_body:
       - pie.html
       - lateral.html
-      - coment.html

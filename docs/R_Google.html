@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>R_Google.knit</title>
+
+<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><div id="logo-container"><img id="logo" style="width: 35px;" src="css/IMG/EE%20logo.png" /></div></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Principal</a>
+</li>
+<li>
+  <a href="cmapas.html">Curso</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Datos y Mapas
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="indicadores.html">Indicadores</a>
+    </li>
+    <li>
+      <a href="Mapas.html">Mapas</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="about.html">Acerca de mí</a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<body>
+<div class="main">
+<div class="classic">
+
+<div id="búsqueda-de-puntos-de-interés-con-google-maps-y-r-studio"
+class="section level1">
+<h1>Búsqueda de puntos de interés con Google Maps y R Studio</h1>
+<p>El objetivo de esta guía es obtener, a través de dos métodos
+distintos, una serie de puntos de nuestro interés. El primer método
+utiliza MyMaps de Google y el segundo es por medio de R Studio y una API
+KEY proporcionada por Google.</p>
+<div id="método-1" class="section level3">
+<h3>Método 1:</h3>
+<ol style="list-style-type: decimal">
+<li>Abre tu navegador web y accede a Google Maps. Para ello, escribe en
+la barra de búsqueda “Google Maps” y haz clic en el primer resultado que
+aparece.</li>
+</ol>
+<p><img src="css/IMG/Imagen1_G.PNG" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Una vez que estés en la página principal de Google Maps, haz clic en
+el botón “Menú” que se encuentra en la esquina superior izquierda de la
+pantalla. El botón “Menú” se representa con tres líneas
+horizontales.</li>
+</ol>
+<p><img src="css/IMG/Imagen2_G.PNG" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Se desplegará un menú lateral. Haz clic en “Tus sitios”.</li>
+</ol>
+<p><img src="css/IMG/Imagen3_G.PNG" /></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Si ya tienes un mapa personalizado en Google Maps, haz clic en el
+mapa que deseas descargar en KML. Si aún no tienes un mapa
+personalizado, crea uno haciendo clic en “Crear Mapa”.</li>
+</ol>
+<p><img src="css/IMG/Imagen4_G.PNG" /></p>
+<ol style="list-style-type: lower-alpha">
+<li><p>En caso de no tener ningún mapa, has lo siguiente: En la página
+de “Tus sitios” de Google Maps, haz clic en el botón “Crear Mapa” que se
+encuentra en la esquina inferior derecha de la pantalla.</p></li>
+<li><p>En la página adicional que se abrió da clic en el nombre. Se
+abrirá un cuadro de diálogo en el que puedes asignar un nombre a tu mapa
+y una descripción opcional. Ingresa el nombre y la descripción que
+desees y haz clic en “Guardar”.</p></li>
+</ol>
+<p><img src="css/IMG/Imagen5_G.PNG" /> <img
+src="css/IMG/Imagen6_G.PNG" /></p>
+<ol start="3" style="list-style-type: lower-alpha">
+<li><p>A continuación, puedes comenzar a agregar lugares o marcadores a
+tu mapa. Puedes hacerlo de varias maneras:</p></li>
+<li><p>Busca un lugar específico en la barra de búsqueda en la parte
+superior de la pantalla. Una vez que hayas encontrado el lugar que
+deseas, haz clic en “Agregar a mapa”. El lugar se agregará como un
+marcador en tu mapa.</p></li>
+</ol>
+<p><img src="css/IMG/Imagen7_G.PNG" /></p>
+<ol start="5" style="list-style-type: lower-alpha">
+<li>Haz clic en el botón “Agregar marcador” en la barra de herramientas
+situada debajo de la barra de búsqueda. Haz clic en el lugar donde
+deseas agregar el marcador en el mapa y se creará un marcador en esa
+ubicación. (También se pueden agregar desde el menú en el botón de
+más).</li>
+</ol>
+<p><img src="css/IMG/Imagen8_G.PNG" /> <img
+src="css/IMG/Imagen9_G.PNG" /></p>
+<ol start="6" style="list-style-type: lower-alpha">
+<li>Haz clic en el botón “Línea” o “Forma” en la barra de herramientas
+para dibujar una línea o una forma en el mapa. Haz clic en el mapa para
+crear puntos y luego haz clic en “Finalizar” para completar la línea o
+la forma.</li>
+</ol>
+<p><img src="css/IMG/Imagen10_G.PNG" /></p>
+<ol start="7" style="list-style-type: lower-alpha">
+<li><p>Una vez que hayas agregado algunos lugares o marcadores a tu
+mapa, puedes personalizarlos. Haz clic en un marcador o una línea/forma
+existente en el mapa para ver las opciones de personalización
+disponibles. Por ejemplo, puedes cambiar el color del marcador, agregar
+una descripción, etc.</p></li>
+<li><p>Continúa agregando lugares, marcadores, líneas y formas a tu mapa
+hasta que esté completo.</p></li>
+</ol>
+<p><img src="css/IMG/Imagen11_G.PNG" /></p>
+<ol style="list-style-type: lower-roman">
+<li>Una vez que hayas terminado de crear tu mapa personalizado, sigue
+los pasos del punto 5 del manual anterior para descargar el mapa en
+formato KML y luego los pasos del punto 8 para importarlo a QGIS.</li>
+</ol>
+<ol start="5" style="list-style-type: decimal">
+<li><p>Una vez que hayas seleccionado o creado el mapa, haz clic en el
+botón “ters puntos” en la esquina superior derecha del panel
+derecho.</p></li>
+<li><p>Se abrirá una ventana emergente con diferentes opciones de
+compartir. Haz clic en “Exportar en formato KML”.</p></li>
+</ol>
+<p><img src="css/IMG/Imagen12_G.PNG" /> <img
+src="css/IMG/Imagen13_G.PNG" /></p>
+<ol start="7" style="list-style-type: decimal">
+<li><p>Se descargará un archivo KML en tu computadora.</p></li>
+<li><p>Abre QGIS en tu computadora. Si aún no tienes QGIS, puedes
+descargarlo de manera gratuita en <a
+href="https://www.qgis.org/en/site/"
+class="uri">https://www.qgis.org/en/site/</a>.</p></li>
+<li><p>Una vez que hayas abierto QGIS, haz clic en “Añadir capa” en la
+barra de herramientas.</p></li>
+<li><p>Selecciona “Añadir capa vectorial” y luego “Archivo”.</p></li>
+<li><p>Busca y selecciona el archivo KML que acabas de descargar y haz
+clic en “Abrir”.</p></li>
+<li><p>La capa se cargará en QGIS y aparecerá en la lista de capas. Haz
+clic en “Aceptar” para agregar la capa a tu proyecto.</p></li>
+</ol>
+<p>• Palabras clave, ejemplos para la zona metropolitana del valle de
+méxico • Museos CDMX • Monumentos históricos CDMX • Restaurantes CDMX •
+Cafeterías CDMX • Bares CDMX • Tiendas de comestibles CDMX • Parques
+CDMX • Teatros CDMX • Cines CDMX • Estadios CDMX • Gimnasios CDMX •
+Piscinas CDMX • Spa CDMX • Hoteles CDMX • Hostales CDMX • Lugares
+turísticos CDMX • Zonas arqueológicas CDMX • Centros comerciales CDMX •
+Mercados CDMX • Plazas CDMX</p>
+</div>
+<div id="método-2" class="section level3">
+<h3>Método 2:</h3>
+<ol style="list-style-type: decimal">
+<li>Obtener una API KEY: Primero, debes obtener una API KEY de
+Google.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Ve al sitio web de Google Cloud Platform (<a
+href="https://console.cloud.google.com/"
+class="uri">https://console.cloud.google.com/</a>).</li>
+<li>Crea una cuenta de Google Cloud e inicia sesión.</li>
+<li>Una vez iniciada la sesión, haz clic en “Go to console”.</li>
+</ol>
+<p><img src="css/IMG/Imagen1R_G.PNG" /></p>
+<ol start="4" style="list-style-type: lower-alpha">
+<li>Crea un nuevo proyecto haciendo clic en el área superior izquierda.
+El botón tendrá por defecto escrito “My first Project”, pero el usuario
+puede seleccionar ese proyecto o crear uno nuevo. Si deseas crear uno
+nuevo, sigue los pasos de e - i.</li>
+<li>Dale un nombre al proyecto y selecciona alguna organización si
+existe. Haz clic en “Crear”.</li>
+</ol>
+<p><img src="css/IMG/Imagen2R_G.PNG" /></p>
+<ol start="6" style="list-style-type: lower-alpha">
+<li>Cuando se cree el proyecto, serás redirigido a una página con varios
+paneles. Debes seleccionar el que se llama “Credenciales - APIs y
+servicios”. En caso de que Google no te redirija a la página deseada, es
+posible entrar a través del panel desplegable en la parte superior
+izquierda, en las 3 barras a lado del logo de Google. Allí, selecciona
+“API y servicios” -&gt; “Credenciales”.</li>
+<li>Aquí es donde se creará nuestra API KEY. Haz clic en el botón de
+“crear credenciales” y luego “Clave API”. Posteriormente, guarda la
+clave y haz clic en “Cerrar”.</li>
+</ol>
+<p><img src="css/IMG/Imagen3R_G.PNG" /></p>
+<ol start="8" style="list-style-type: lower-alpha">
+<li>Ahora debes activar los servicios que se van a utilizar. Haz clic en
+“APIs y servicios” y “APIs y servicios habilitados”.</li>
+</ol>
+<p><img src="css/IMG/Imagen4R_G.PNG" /></p>
+<ol style="list-style-type: lower-roman">
+<li>En la nueva página, haz clic en “Habilitar APIs y servicios”. Busca
+y habilita “Maps JavaScript API” y “Places API”. Estos dos servicios
+permiten consultar información de lugares en una variedad de categorías,
+como establecimientos, puntos de interés destacados, ubicaciones
+geográficas y más.</li>
+</ol>
+<ol start="2" style="list-style-type: decimal">
+<li>Es momento de entrar a R Studio.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Abre y guarda un archivo script.</li>
+<li>Instala la paquetería requerida con install.packages(“googleway”) y
+carga la librería con library(googleway).</li>
+</ol>
+<pre class="r"><code>library(googleway)</code></pre>
+<ol start="3" style="list-style-type: lower-alpha">
+<li>Guarda la API KEY en una variable de la siguiente forma:</li>
+</ol>
+<pre class="r"><code># Sustituye por tu API KEY
+API &lt;- &#39;AIzaSyAGwy0Qus830v5LuBT7ucaDexPef2HuBWE&#39;</code></pre>
+<ol start="4" style="list-style-type: lower-alpha">
+<li><p>Ahora, utilizaremos la siguiente función google_places() de la
+siguiente forma para buscar hoteles cerca del puerto de ferry en
+Cozumel, México:</p></li>
+<li><p>Búsqueda por un punto específico.</p></li>
+</ol>
+<pre class="r"><code>res &lt;- google_places(location = c(20.511373, -86.949984),
+                     place_type = &quot;restaurant&quot;,
+                     radius = 1000,
+                     key = API)</code></pre>
+<ol start="2" style="list-style-type: lower-roman">
+<li>Usa “next_page_token” de la búsqueda previa para buscar los
+siguientes 20 resultados.</li>
+</ol>
+<pre class="r"><code>res_dig &lt;- google_places(location = c(20.511373, -86.949984),
+                         place_type = &quot;Hotel&quot;,
+                         page_token = res$next_page_token,
+                         radius = 1000,
+                         key = API)</code></pre>
+<ol start="3" style="list-style-type: lower-roman">
+<li>Guarda tu busqueda como un data.frame</li>
+</ol>
+<pre class="r"><code># Convertir el resultado de la búsqueda cercana en un data.frame
+Busqueda1 &lt;- as.data.frame(res$results)
+
+# Convertir el resultado de la búsqueda de texto en un data.frame
+Busqueda2 &lt;- as.data.frame(res_dig$results)</code></pre>
+<p>Donde: ’location = NULL´ coordenadas de latitud/longitud alrededor
+del cual se buscará la información del lugar. ´radius = NULL´, distancia
+en metros a la redonda para buscar. ´place_type = NULL´, Restringe los
+resultados a lugares que coincidan con el tipo especificado.<br />
+´key = API´Usa la llave guardada en nuestra variable API. Tambien se
+puede poner directamente. ´page_token = NULL´ Busca los siguientes 20
+resultados a la búsqueda previa.</p>
+<ol start="4" style="list-style-type: lower-roman">
+<li>Visualizamos el primer resutlado.</li>
+</ol>
+<pre class="r"><code>library(dplyr)
+vista &lt;- select(Busqueda1, name, vicinity)
+View(vista)</code></pre>
+<ul>
+<li><p>Nota: Para más información sobre la función
+´google_places()´visite: <a
+href="https://rdrr.io/cran/googleway/man/google_places.html"
+class="uri">https://rdrr.io/cran/googleway/man/google_places.html</a></p>
+</div>
+</div>
+</body></li>
+</ul>
+</div>
+</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.inline {
+  background-color: #f7f7f7;
+  border:solid 1px #B0B0B0;
+}
+.error {
+	font-weight: bold;
+	color: #FF0000;
+}
+.warning {
+	font-weight: bold;
+}
+.message {
+	font-style: italic;
+}
+.source, .output, .warning, .error, .message {
+	padding: 0 1em;
+  border:solid 1px #F7F7F7;
+}
+.source {
+  background-color: #f5f5f5;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+.hl.num {
+  color: #AF0F91;
+}
+.hl.str {
+  color: #317ECC;
+}
+.hl.com {
+  color: #AD95AF;
+  font-style: italic;
+}
+.hl.opt {
+  color: #000000;
+}
+.hl.std {
+  color: #585858;
+}
+.hl.kwa {
+  color: #295F94;
+  font-weight: bold;
+}
+.hl.kwb {
+  color: #B05A65;
+}
+.hl.kwc {
+  color: #55aa55;
+}
+.hl.kwd {
+  color: #BC5A65;
+  font-weight: bold;
+}
+</style>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="footer" id="contacto">
+  <h2>Contacto</h2>
+  <p></p>
+    <a href="martinez.alvaro61@gmail.com"><i class="far fa-envelope"></i> martinez.alvaro61@gmail.com</a>
+    <p></p>
+    <a href="https://github.com/Alvaro1899"><i class="fab fa-github"></i>Github: Alvaro1899</a>
+  </div>
+</body>
+</html>
+<div class="sidebar">
+  <h3>Últimas noticias</h3>
+  <ul>
+    <li>
+      <img class="sidebar-imagen" src="css/IMG/Foto%20de%20perfil.png" alt="Imagen de actualización de información personal">
+      <a class="sidebar-enlace" href="#">Se llevó la actualización de la información personal</a>
+    </li>
+    <li>
+      <img class="sidebar-imagen" src="css/IMG/Foto%20de%20perfil.png" alt="Imagen del panel lateral">
+      <a class="sidebar-enlace" href="#">Se añadió el panel lateral</a>
+    </li>
+    <li>
+      <img class="sidebar-imagen" src="css/IMG/Foto%20de%20perfil.png" alt="Imagen de noticias añadidas">
+      <a class="sidebar-enlace" href="#">Se añadieron noticias</a>      
+    </li>
+    <li>
+      <img class="sidebar-imagen" src="css/IMG/Foto%20de%20perfil.png" alt="Imagen de noticias añadidas">
+      <a class="sidebar-enlace" href="#">Se añadieron noticias</a>      
+    </li>
+  </ul>
+</div>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
