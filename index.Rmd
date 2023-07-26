@@ -3,6 +3,15 @@
 <body>
   <div class="main2">
   <div class="main-border">
+  
+<a href="R_Google.html"><img src="css/IMG/R_G-fonmini.png" alt="R y Google" style="width: 30%;"></a>
+
+### ¡Explora y descubre lugares increíbles! Esta guía paso a paso te muestra dos métodos para encontrar puntos de interés (datos vectoriales) con Google Maps y R Studio. Desde museos y restaurantes hasta parques y hoteles, desbloquea un mundo de posibilidades con estas herramientas poderosas. 🗺️📍
+
+   </div>
+  </div>
+  <div class="main2">
+  <div class="main-border">
     
 ### ¡Descubre el poder de los mapas: Aprende a crear y manipular datos económicos con QGIS!
 
@@ -12,14 +21,6 @@
 
   </div>
   </div>
-  <div class="main2">
-  <div class="main-border">
   
-<a href="R_Google.html"><img src="css/IMG/R_G-fon.png" alt="R y Google" style="width: 50%;"></a>
-
-### ¡Explora y descubre lugares increíbles! Esta guía paso a paso te muestra dos métodos para encontrar puntos de interés (datos vectoriales) con Google Maps y R Studio. Desde museos y restaurantes hasta parques y hoteles, desbloquea un mundo de posibilidades con estas herramientas poderosas. 🗺️📍
-
-   </div>
-  </div>
   
 </body>
