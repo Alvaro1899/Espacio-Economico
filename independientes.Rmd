@@ -1,7 +1,7 @@
 <body>
   <div class="main">
 
-### Cómo buscar puntos de interés en R y GoogleMaps
+### [Cómo buscar puntos de interés en R y GoogleMaps](R_Google.html)
 
 ¡Explora y descubre lugares increíbles! Esta guía paso a paso te muestra dos métodos para encontrar puntos de interés (datos vectoriales) con Google Maps y R Studio. Desde museos y restaurantes hasta parques y hoteles, desbloquea un mundo de posibilidades con estas herramientas poderosas. 🗺️📍
 

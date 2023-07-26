@@ -13,6 +13,8 @@ navbar:
           href: indicadores.html
         - text: "Mapas"
           href: Mapitas.html
+    - text: "Extras"
+      href: independientes.html
   right:
     - text: "Acerca de mí"
       href: about.html
