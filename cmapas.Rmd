@@ -2,7 +2,7 @@
   <div class="main">
   <div class="curso">
   <div class="searchable">
-# [Cursos: Construcción de mapas con información sociodemográfica.](https://www.youtube.com/watch?v=zTgQ_VnrP_s){target="_blank"}
+# [Cursos: Construcción de mapas con información sociodemográfica.](){target="_blank"}
 
 __Objetivo:__
 
@@ -10,7 +10,7 @@ __¿A quién le puede ser útil?__
 
 __¿Qúe debo de saber antes de empezar?__
 
-## [Conceptos básicos clave.](https://www.youtube.com/watch?v=zTgQ_VnrP_s){target="_blank"}
+## [Conceptos básicos clave.](){target="_blank"}
 
 ### Cartografía.
 
@@ -20,41 +20,41 @@ __¿Qúe debo de saber antes de empezar?__
 
 #### Tipos de mapas.
 
-## [Una introducción a las bases de datos.]((https://www.youtube.com/watch?v=zTgQ_VnrP_s){target="_blank"})
+## [Una introducción a las bases de datos.]((){target="_blank"})
 
 ### ¿Qué son los datos y cómo se forman las bases de datos?.
 
 ### ¿Cúal es su relación con el ambito espacial?.
 
-## [¿Qúe fuentes de información son confiables?.]((https://www.youtube.com/watch?v=zTgQ_VnrP_s){target="_blank"})
+## [¿Qúe fuentes de información son confiables?.]((){target="_blank"})
 
-## [Momento de preparar los datos.](https://www.youtube.com/watch?v=zTgQ_VnrP_s){target="_blank"}
+## [Momento de preparar los datos.](){target="_blank"}
 
 ### Algunos datos especiales (indicadores).
 
-## [¿Qúe son los SIG?.](https://www.youtube.com/watch?v=zTgQ_VnrP_s){target="_blank"}
+## [¿Qúe son los SIG?.](){target="_blank"}
 
 ### QGIS.
 
-## [Análisis espacial.](https://www.youtube.com/watch?v=zTgQ_VnrP_s){target="_blank"}
+## [Análisis espacial.](){target="_blank"}
 
 ### Tipos de análisis espacial.
 
 ### Enfoque socio espacial.
 
-### [Distribución espacual univariada y bivariada por cartografía tematica.](https://www.youtube.com/watch?v=zTgQ_VnrP_s){target="_blank"}
+### [Distribución espacual univariada y bivariada por cartografía tematica.](){target="_blank"}
 
-### [Información vectorial de puntos.](https://www.youtube.com/watch?v=zTgQ_VnrP_s){target="_blank"}
+### [Información vectorial de puntos.](){target="_blank"}
 
 - __DENUE__
 - __MYMAPS__
-- [__RStudio__](https://www.youtube.com/watch?v=zTgQ_VnrP_s){target="_blank"}
+- [__RStudio__](){target="_blank"}
 
-### [Incorporaciones multiples para el análisis.](https://www.youtube.com/watch?v=zTgQ_VnrP_s){target="_blank"}
+### [Incorporaciones multiples para el análisis.](){target="_blank"}
 
-#### [Areás de influecia con aproximación real. Google vs ORS Tools.](https://www.youtube.com/watch?v=zTgQ_VnrP_s){target="_blank"}
+#### [Areás de influecia con aproximación real. Google vs ORS Tools.](){target="_blank"}
 
-## [Diseño y presentación de la informaión cartográfica.](https://www.youtube.com/watch?v=zTgQ_VnrP_s){target="_blank"}
+## [Diseño y presentación de la informaión cartográfica.](){target="_blank"}
   </div>
   </div>
   </div>
