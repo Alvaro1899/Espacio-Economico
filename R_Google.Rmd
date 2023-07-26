@@ -135,7 +135,7 @@ c. Guarda la API KEY en una variable de la siguiente forma:
 
 ```{r}
 # Sustituye por tu API KEY
-API <- 'AIzaSyAGwy0Qus830v5LuBT7ucaDexPef2HuBWE'
+API <- 'TU-API-KEY'
 ```
   
 d. Ahora, utilizaremos la siguiente función google_places() de la siguiente forma para buscar hoteles cerca del puerto de ferry en Cozumel, México:
