@@ -105,7 +105,7 @@
   text-align: justify;
   padding: 20px;
   margin: 10px;
-  margin-bottom: 100px; /* Ajusta el valor según la altura del footer */
+  margin-bottom: 15px; /* Ajusta el valor según la altura del footer */
   border: 1px solid transparent;
   position: relative;
 }
