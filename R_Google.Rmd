@@ -10,25 +10,25 @@ El objetivo de esta guía es obtener, a través de dos métodos distintos, una s
 1. Abre tu navegador web y accede a Google Maps. Para ello, escribe en la barra de búsqueda "Google Maps" y haz clic en el primer resultado que aparece.
 
 <div class="image-container">
-![](css\IMG\Imagen1_G.PNG)
+![](css\IMG\Imagen1_G.png)
 </div>
 
 2.	Una vez que estés en la página principal de Google Maps, haz clic en el botón "Menú" que se encuentra en la esquina superior izquierda de la pantalla. El botón "Menú" se representa con tres líneas horizontales.
 
 <div class="image-container">
-![](css\IMG\Imagen2_G.PNG)
+![](css\IMG\Imagen2_G.png)
 </div>
 
 3.	Se desplegará un menú lateral. Haz clic en "Tus sitios".
 
 <div class="image-container">
-![](css\IMG\Imagen3_G.PNG)
+![](css\IMG\Imagen3_G.png)
 </div>
 
 4.	Si ya tienes un mapa personalizado en Google Maps, haz clic en el mapa que deseas descargar en KML. Si aún no tienes un mapa personalizado, crea uno haciendo clic en "Crear Mapa".
 
 <div class="image-container">
-![](css\IMG\Imagen4_G.PNG)
+![](css\IMG\Imagen4_G.png)
 </div>
 
 a.	En caso de no tener ningún mapa, has lo siguiente: En la página de "Tus sitios" de Google Maps, haz clic en el botón "Crear Mapa" que se encuentra en la esquina inferior derecha de la pantalla.
@@ -36,10 +36,10 @@ a.	En caso de no tener ningún mapa, has lo siguiente: En la página de "Tus sit
 b.	En la página adicional que se abrió da clic en el nombre. Se abrirá un cuadro de diálogo en el que puedes asignar un nombre a tu mapa y una descripción opcional. Ingresa el nombre y la descripción que desees y haz clic en "Guardar".
 
 <div class="image-container">
-![](css\IMG\Imagen5_G.PNG)
+![](css\IMG\Imagen5_G.png)
 </div>
 <div class="image-container">
-![](css\IMG\Imagen6_G.PNG)
+![](css\IMG\Imagen6_G.png)
 </div>
 
 c. A continuación, puedes comenzar a agregar lugares o marcadores a tu mapa. Puedes hacerlo de varias maneras:
@@ -47,22 +47,22 @@ c. A continuación, puedes comenzar a agregar lugares o marcadores a tu mapa. Pu
 d. Busca un lugar específico en la barra de búsqueda en la parte superior de la pantalla. Una vez que hayas encontrado el lugar que deseas, haz clic en "Agregar a mapa". El lugar se agregará como un marcador en tu mapa.
 
 <div class="image-container">
-![](css\IMG\Imagen7_G.PNG)
+![](css\IMG\Imagen7_G.png)
 </div>
 
 e. Haz clic en el botón "Agregar marcador" en la barra de herramientas situada debajo de la barra de búsqueda. Haz clic en el lugar donde deseas agregar el marcador en el mapa y se creará un marcador en esa ubicación. (También se pueden agregar desde el menú en el botón de más).
 
 <div class="image-container">
-![](css\IMG\Imagen8_G.PNG)
+![](css\IMG\Imagen8_G.png)
 </div>
 <div class="image-container">
-![](css\IMG\Imagen9_G.PNG)
+![](css\IMG\Imagen9_G.png)
 </div>
 
 f. Haz clic en el botón "Línea" o "Forma" en la barra de herramientas para dibujar una línea o una forma en el mapa. Haz clic en el mapa para crear puntos y luego haz clic en "Finalizar" para completar la línea o la forma.
 
 <div class="image-container">
-![](css\IMG\Imagen10_G.PNG)
+![](css\IMG\Imagen10_G.png)
 </div>
 
 g. Una vez que hayas agregado algunos lugares o marcadores a tu mapa, puedes personalizarlos. Haz clic en un marcador o una línea/forma existente en el mapa para ver las opciones de personalización disponibles. Por ejemplo, puedes cambiar el color del marcador, agregar una descripción, etc.
@@ -70,7 +70,7 @@ g. Una vez que hayas agregado algunos lugares o marcadores a tu mapa, puedes per
 h. Continúa agregando lugares, marcadores, líneas y formas a tu mapa hasta que esté completo.
 
 <div class="image-container">
-![](css\IMG\Imagen11_G.PNG)
+![](css\IMG\Imagen11_G.png)
 </div>
 
 i. Una vez que hayas terminado de crear tu mapa personalizado, sigue los pasos del punto 5 del manual anterior para descargar el mapa en formato KML y luego los pasos del punto 8 para importarlo a QGIS.
@@ -80,10 +80,10 @@ i. Una vez que hayas terminado de crear tu mapa personalizado, sigue los pasos d
 6.	Se abrirá una ventana emergente con diferentes opciones de compartir. Haz clic en "Exportar en formato KML".
 
 <div class="image-container">
-![](css\IMG\Imagen12_G.PNG)
+![](css\IMG\Imagen12_G.png)
 </div>
 <div class="image-container">
-![](css\IMG\Imagen13_G.PNG)
+![](css\IMG\Imagen13_G.png)
 </div>
 
 7.	Se descargará un archivo KML en tu computadora.
@@ -131,27 +131,27 @@ i. Una vez que hayas terminado de crear tu mapa personalizado, sigue los pasos d
   c. Una vez iniciada la sesión, haz clic en "Go to console".
 
 <div class="image-container">
-![](css\IMG\Imagen1R_G.PNG)
+![](css\IMG\Imagen1R_G.png)
 </div>
 
 d. Crea un nuevo proyecto haciendo clic en el área superior izquierda. El botón tendrá por defecto escrito "My first Project", pero el usuario puede seleccionar ese proyecto o crear uno nuevo. Si deseas crear uno nuevo, sigue los pasos de e - i.
 e. Dale un nombre al proyecto y selecciona alguna organización si existe. Haz clic en "Crear".
 
 <div class="image-container">
-![](css\IMG\Imagen2R_G.PNG)
+![](css\IMG\Imagen2R_G.png)
 </div>
 
 f. Cuando se cree el proyecto, serás redirigido a una página con varios paneles. Debes seleccionar el que se llama "Credenciales - APIs y servicios". En caso de que Google no te redirija a la página deseada, es posible entrar a través del panel desplegable en la parte superior izquierda, en las 3 barras a lado del logo de Google. Allí, selecciona "API y servicios" -> "Credenciales".
 g. Aquí es donde se creará nuestra API KEY. Haz clic en el botón de "crear credenciales" y luego "Clave API". Posteriormente, guarda la clave y haz clic en "Cerrar".
 
 <div class="image-container">
-![](css\IMG\Imagen3R_G.PNG)
+![](css\IMG\Imagen3R_G.png)
 </div>
 
 h. Ahora debes activar los servicios que se van a utilizar. Haz clic en "APIs y servicios" y "APIs y servicios habilitados".
 
 <div class="image-container">
-![](css\IMG\Imagen4R_G.PNG)
+![](css\IMG\Imagen4R_G.png)
 </div>
 
 i. En la nueva página, haz clic en "Habilitar APIs y servicios". Busca y habilita "Maps JavaScript API" y "Places API". Estos dos servicios permiten consultar información de lugares en una variedad de categorías, como establecimientos, puntos de interés destacados, ubicaciones geográficas y más.
