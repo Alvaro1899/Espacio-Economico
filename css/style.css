@@ -85,6 +85,12 @@
 .main h3 {
   font-size: 18px;
 }
+
+.classic image{
+  width: 300px;
+  height: 200px;
+}
+
 .main2 {
   flex: 1; /* El contenido principal ocupa todo el espacio disponible */
   background: transparent;
