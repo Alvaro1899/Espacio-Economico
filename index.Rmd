@@ -12,4 +12,15 @@
 
   </div>
   </div>
+  
+  <div class="main2">
+  <div class="main-border">
+  
+  <a href="cmapas.html"><img src="css/IMG/R_G-fon.png" alt="Curso de SIG"></a>
+
+### ¡Explora y descubre lugares increíbles! Esta guía paso a paso te muestra dos métodos para encontrar puntos de interés (datos vectoriales) con Google Maps y R Studio. Desde museos y restaurantes hasta parques y hoteles, desbloquea un mundo de posibilidades con estas herramientas poderosas. 🗺️📍
+
+   </div>
+  </div>
+  
 </body>
