@@ -74,7 +74,7 @@
   text-align: justify;
   padding: 20px;
   margin: 10px;
-  margin-bottom: 100px; /* Ajusta el valor según la altura del footer */
+  margin-bottom: -45px; /* Ajusta el valor según la altura del footer */
 }
 
 
@@ -373,8 +373,6 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 .faq-container {    
-  max-width: calc(100% - 220px); /* Ajusta el valor según el ancho de la barra lateral */
-  margin: -145px 175px 0 auto;
   padding: 2rem;
 }
 .faq-container h2 {

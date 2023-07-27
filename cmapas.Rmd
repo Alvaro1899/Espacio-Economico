@@ -20,6 +20,7 @@ Es recomdable saber excel de forma básica
   </div>
   </div>
   
+  <div class="main">
   <div class="faq-container">
   <h2> Temario general </h2>
   
@@ -75,6 +76,7 @@ Es recomdable saber excel de forma básica
 </details>
 
 </div>
-  
+</div>
+
 </body>
 
