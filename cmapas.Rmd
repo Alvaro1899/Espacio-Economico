@@ -1,62 +1,80 @@
 <body>
   <div class="main">
   <div class="curso">
-  <div class="searchable">
-# [Cursos: Construcción de mapas con información sociodemográfica.](){target="_blank"}
+  
+# Cursos:Construcción de mapas con información sociodemográfica. [(Video)](){target="_blank"}
 
-__Objetivo:__
 
-__¿A quién le puede ser útil?__
+__El objetivo:__ 
+
+Es proporcionar a los participantes las habilidades y conocimientos necesarios para crear mapas temáticos y realizar análisis espaciales utilizando datos sociodemográficos. Los participantes aprenderán a utilizar herramientas como QGIS y diversas fuentes de información confiables para crear mapas que representen información socioespacial de manera efectiva.
+
+__¿A quién le puede ser útil?__ 
+
+Este curso puede ser útil para diferentes profesionales y estudiantes que trabajen o estén interesados en campos relacionados con la geografía, el urbanismo, la sociología, la planificación territorial, la toma de decisiones basada en datos, la gestión de recursos, la investigación y análisis socioespacial, entre otros. Además, puede ser beneficioso para aquellos que necesiten presentar datos socioespaciales de manera visual y comprensible, ya sea para proyectos académicos, informes profesionales o presentaciones.
 
 __¿Qúe debo de saber antes de empezar?__
 
-## [Conceptos básicos clave.](){target="_blank"}
+Es recomdable saber excel de forma básica
 
-### Cartografía.
-
-#### Representación de la tierra.
-
-#### Las escalas.
-
-#### Tipos de mapas.
-
-## [Una introducción a las bases de datos.]((){target="_blank"})
-
-### ¿Qué son los datos y cómo se forman las bases de datos?.
-
-### ¿Cúal es su relación con el ambito espacial?.
-
-## [¿Qúe fuentes de información son confiables?.]((){target="_blank"})
-
-## [Momento de preparar los datos.](){target="_blank"}
-
-### Algunos datos especiales (indicadores).
-
-## [¿Qúe son los SIG?.](){target="_blank"}
-
-### QGIS.
-
-## [Análisis espacial.](){target="_blank"}
-
-### Tipos de análisis espacial.
-
-### Enfoque socio espacial.
-
-### [Distribución espacual univariada y bivariada por cartografía tematica.](){target="_blank"}
-
-### [Información vectorial de puntos.](){target="_blank"}
-
-- __DENUE__
-- __MYMAPS__
-- [__RStudio__](){target="_blank"}
-
-### [Incorporaciones multiples para el análisis.](){target="_blank"}
-
-#### [Areás de influecia con aproximación real. Google vs ORS Tools.](){target="_blank"}
-
-## [Diseño y presentación de la informaión cartográfica.](){target="_blank"}
   </div>
   </div>
-  </div>
+  
+  <div class="faq-container">
+  <h2> Temario general </h2>
+  
+  <details>
+  <summary>Conceptos básicos clave.</summary>
+  <p>Tema 1. Conceptos Cartográficos
+
+  Se abordan los principios básicos de la cartografía, incluyendo la representación de la tierra    en un plano, las proyecciones cartográficas y la importancia de las escalas en la relación entre   distancias medidas en un mapa y la realidad. Se explican enfoques modernos como la proyección de   Mercator utilizada en aplicaciones web de mapas y la proyección UTM para mediciones precisas.     Además, se clasifican los tipos de mapas según la escala de trabajo y el propósito.
+
+  .<iframe width="560" height="315" src="https://www.youtube.com/embed/MfL_JkcEFbE" frameborder="0" allowfullscreen></iframe>
+  
+  </p>
+</details>
+
+<details>
+  <summary>Una introducción a las bases de datos.</summary>
+  <p>Proximamente...</p>
+</details>
+  
+  <details>
+  <summary>¿Qúe fuentes de información son confiables?.</summary>
+  <p>Proximamente...</p>
+</details>
+  
+  <details>
+  <summary>Cómo preparar los datos.</summary>
+  <p>Proximamente...</p>
+</details>
+  
+  <details>
+  <summary>Algunos datos especiales (indicadores).</summary>
+  <p>Proximamente...</p>
+</details>
+  
+  <details>
+  <summary>¿Qúe son los SIG?.</summary>
+  <p>Proximamente...</p>
+</details>
+
+  <details>
+  <summary>Análisis espacial.</summary>
+  <p>Proximamente...</p>
+</details>
+
+  <details>
+  <summary>Incorporaciones multiples para el análisis.</summary>
+  <p>Proximamente...</p>
+</details>
+
+  <details>
+  <summary>Diseño y presentación de la informaión cartográfica.</summary>
+  <p>Proximamente...</p>
+</details>
+
+</div>
+  
 </body>
 
