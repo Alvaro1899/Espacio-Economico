@@ -263,11 +263,22 @@
   opacity: 1;
   transform: scale(1.02);
 }
-/* Media Query para pantallas pequeñas */
-@media screen and (max-width: 900px) {
-  .container {
-    flex-direction: column; /* El contenido se apila verticalmente en pantallas pequeñas */
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+  .main {
+    max-width: 100%; /* El contenido principal ocupa todo el ancho en pantallas pequeñas */
+    margin: 0; /* Quitamos el margen para aprovechar mejor el espacio */
+    padding: 10px; /* Reducimos el espaciado interno */
   }
+
+  .main h1 {
+    font-size: 24px; /* Reducimos el tamaño del encabezado h1 en pantallas pequeñas */
+  }
+
+  .main h3 {
+    font-size: 16px; /* Reducimos el tamaño del encabezado h3 en pantallas pequeñas */
+  }
+}
 
   .sidebar {
     display: none; /* Oculta la barra lateral en pantallas pequeñas */
