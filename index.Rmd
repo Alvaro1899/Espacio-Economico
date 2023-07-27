@@ -1,6 +1,6 @@
+<body>
 # ___Novedades___
 
-<body>
   <div class="main2">
   <div class="main-border">
   
