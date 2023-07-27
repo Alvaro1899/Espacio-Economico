@@ -8,7 +8,7 @@ Se abordan los principios básicos de la cartografía, incluyendo la representac
 
 __Video de prueba__
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MfL_JkcEFbE" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/MfL_JkcEFbE" frameborder="0" allowfullscreen></iframe>
 
   </div>
   </div>

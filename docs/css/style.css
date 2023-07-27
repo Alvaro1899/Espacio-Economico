@@ -74,7 +74,7 @@
   text-align: justify;
   padding: 20px;
   margin: 10px;
-  margin-bottom: -45px; /* Ajusta el valor según la altura del footer */
+  margin-bottom: 100px; /* Ajusta el valor según la altura del footer */
 }
 
 
