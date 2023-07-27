@@ -360,8 +360,8 @@ a:hover {
 iframe {
   border: none; /* Quita el borde del video */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Agrega una sombra */
-  margin-left: 25px;
-  max-width: calc(100% - 220px); /* Ajusta el valor según el ancho de la barra lateral */
+  margin-left: 2.5%; /* Utiliza un porcentaje en lugar de píxeles */
+  max-width: 95%; /* Utiliza un porcentaje en lugar de píxeles */
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');

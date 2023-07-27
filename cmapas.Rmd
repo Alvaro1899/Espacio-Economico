@@ -26,7 +26,7 @@ Es recomdable saber excel de forma básica
   
   <details>
   <summary>Conceptos básicos clave.</summary>
-  <p>Tema 1. Conceptos Cartográficos
+  <p>Tema 1. Conceptos Cartográficos--
 
   Se abordan los principios básicos de la cartografía, incluyendo la representación de la tierra    en un plano, las proyecciones cartográficas y la importancia de las escalas en la relación entre   distancias medidas en un mapa y la realidad. Se explican enfoques modernos como la proyección de   Mercator utilizada en aplicaciones web de mapas y la proyección UTM para mediciones precisas.     Además, se clasifican los tipos de mapas según la escala de trabajo y el propósito.
 
