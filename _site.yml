@@ -9,7 +9,7 @@ navbar:
       href: cmapas.html
     - text: "Datos y Mapas"
       menu:
-        - text: "Indicadores"
+        - text: "Datos"
           href: indicadores.html
         - text: "Mapas"
           href: Mapitas.html
